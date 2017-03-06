@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 33000012207744126}
   - component: {fileID: 135000011972657486}
   - component: {fileID: 23000012244551330}
-  - component: {fileID: 114073154906552756}
-  - component: {fileID: 114760955252255520}
+  - component: {fileID: 114000013820033850}
+  - component: {fileID: 114244731808484530}
+  - component: {fileID: 114382506677702168}
   m_Layer: 0
   m_Name: HandRight
   m_TagString: Untagged
@@ -82,7 +83,25 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013858329864}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114073154906552756
+--- !u!114 &114000013820033850
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013858329864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18fe1d770e05e4dbd9388157cfb9eaf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  multiplier: 1
+  restColor: {r: 1, g: 1, b: 1, a: 0.503}
+  openColor: {r: 0, g: 1, b: 0, a: 0.5019608}
+  closedColor: {r: 1, g: 0, b: 0, a: 0.5019608}
+  pointColor: {r: 0, g: 0, b: 1, a: 0.5019608}
+  standardShader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  outlineShader: {fileID: 4800000, guid: 0ecdacba3572b8346a7157624ade2e7d, type: 3}
+--- !u!114 &114244731808484530
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -108,7 +127,7 @@ MonoBehaviour:
   viewIdField: 0
   instantiationId: -1
   isRuntimeInstantiated: 0
---- !u!114 &114760955252255520
+--- !u!114 &114382506677702168
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -123,29 +142,34 @@ MonoBehaviour:
     SynchronizeEnabled: 1
     TeleportEnabled: 1
     TeleportIfDistanceGreaterThan: 3
-    InterpolateOption: 2
+    InterpolateOption: 4
     InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 1
+    InterpolateLerpSpeed: 10
     InterpolateMoveTowardsAcceleration: 2
     InterpolateMoveTowardsDeceleration: 2
     InterpolateSpeedCurve:
+      serializedVersion: 2
       m_Curve:
-      - time: -1
+      - serializedVersion: 2
+        time: -1
         value: 0
         inSlope: 0
         outSlope: Infinity
         tangentMode: 0
-      - time: 0
+      - serializedVersion: 2
+        time: 0
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 1
+      - serializedVersion: 2
+        time: 1
         value: 1
         inSlope: 0
         outSlope: 1
         tangentMode: 0
-      - time: 4
+      - serializedVersion: 2
+        time: 4
         value: 4
         inSlope: 1
         outSlope: 0
